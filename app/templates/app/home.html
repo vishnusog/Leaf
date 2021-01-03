@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/home.css'%}">
+    <title>Leaf</title>
+</head>
+<body>
+<div class="nav">
+  <div class="brand">
+        <a href="#">Leaf</a>
+  </div>
+    <div class="lister">
+        <ul>
+            <li>Home</li>
+            <a href="{% url 'about' %}"> <li>About</li></a>
+            <li>contact</li>
+        </ul>
+    </div>
+</div>
+<div class="doorform">
+    <ul>
+        <li>Log in</li>
+        <li>registration </li>
+    </ul>
+</div>
+</body>
+</html>
